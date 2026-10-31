@@ -13,7 +13,7 @@
 
 ## Proposta do Desafio
 
-- Projeto Final da disciplina de **Automação de Testes Web** referente ao Módulo 08 da Pós-Graduação em Automação de Testes (PGATS).
+- Projeto Final da disciplina de **Automação de Testes Web** referente ao
 - O objetivo é automatizar os casos de teste da aplicação fictícia **Automation Exercise** usando **Cypress**.
 - A solução deve contemplar os casos descritos na página de testes: **1, 2, 3, 4, 5, 8, 9, 10, 15 e 16**.
 - O entregável deve seguir boas práticas de automação e organização, com modularização, uso adequado de seletores, relatórios e execução em GitHub Actions.
@@ -65,7 +65,7 @@ Essa organização permite separar responsabilidades e manter o projeto mais leg
   - reporter do Mochawesome
   - geração de videos e screenshots
 - `package.json` contém os scripts principais para execução local e CI.
-- `pipeline.yml` define a execução da suíte no GitHub Actions.
+- `.github/workflows/pipeline.yml` define a execução da suíte no GitHub Actions.
 
 ### Parte 4: Relatórios
 
@@ -83,7 +83,7 @@ Os relatórios são úteis tanto para validação local quanto para entrega na p
 A solução inclui uma pipeline de integração contínua utilizando **GitHub Actions** para execução automática dos testes no ambiente de CI.
 
 #### Arquivo de Configuração
-- **Localização**: `pipeline.yml`
+- **Localização**: `.github/workflows/pipeline.yml`
 - **Ferramenta**: GitHub Actions
 - **Tecnologias**: Cypress + Node.js + npm + Mochawesome
 
@@ -221,6 +221,9 @@ Quando houver push na branch principal, a GitHub Action inicia automaticamente.
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── pipeline.yml
 ├── cypress/
 │   ├── e2e/
 │   │   └── trabalho-final.cy.js
@@ -230,17 +233,16 @@ Quando houver push na branch principal, a GitHub Action inicia automaticamente.
 │   │   ├── pedido/
 │   │   ├── produtos/
 │   │   └── subscription/
-│   ├── reports/
-│   ├── screenshots/
+│   ├── reports/            # gerados na execução
+│   ├── screenshots/        # gerados na execução
 │   ├── support/
-│   └── videos/
+│   └── videos/             # gerados na execução
 ├── .gitignore
 ├── cypress.config.js
 ├── package.json
 ├── package-lock.json
-├── pipeline.yml
 ├── README.md
-└── node_modules/   (não deve ser enviado na entrega final)
+└── node_modules/           # ignorado pelo Git (.gitignore)
 ```
 
 ## Tecnologias Utilizadas
