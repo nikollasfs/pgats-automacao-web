@@ -1,0 +1,22 @@
+node_modules/
+
+# logs
+log
+results
+npm-debug.log*
+npm_install_debug.log
+
+# cypress artifacts
+cypress/reports/
+cypress/reports/.jsons/
+cypress/screenshots/
+cypress/videos/
+
+# env files
+.env
+.env.*
+.env.production
+.env.test
+
+# system
+.DS_Store
