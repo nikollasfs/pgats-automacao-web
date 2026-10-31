@@ -13,7 +13,7 @@
 
 ## Proposta do Desafio
 
-- Projeto Final da disciplina de **Automação de Testes Web** referente ao
+- Projeto Final da disciplina de **Automação de Testes Web** referente ao Módulo 08 da Pós-Graduação em Automação de Testes (PGATS).
 - O objetivo é automatizar os casos de teste da aplicação fictícia **Automation Exercise** usando **Cypress**.
 - A solução deve contemplar os casos descritos na página de testes: **1, 2, 3, 4, 5, 8, 9, 10, 15 e 16**.
 - O entregável deve seguir boas práticas de automação e organização, com modularização, uso adequado de seletores, relatórios e execução em GitHub Actions.
